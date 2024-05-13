@@ -1,9 +1,10 @@
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Provider } from "react-redux";
 import HomeScreen from "./screens/HomeScreen";
-import { NavigationContainer } from "@react-navigation/native";
+import MapScreen from "./screens/MapScreen";
 import { store } from "./store";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import MapScreen from "./components/MapScreen";
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
